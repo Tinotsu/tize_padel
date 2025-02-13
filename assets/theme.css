@@ -13952,14 +13952,40 @@ div:where(.swal2-popup).swal2-modal.swal2-icon-question.swal2-show {
   border-radius: 1000px !important;
 }
 #judgeme_product_reviews {
-@media (min-width: 1536px) { 
+  @media (min-width: 1536px) {
     padding-left: 120px;
     padding-right: 120px;
-}
+  }
 }
 .jdgm-rev-widg__title {
   font-size: var(--title-sm) !important;
   color: #1c6da8 !important;
 }
-
-
+.jdgm-carousel-item {
+  background-color: rgb(var(--color-placeholder)) !important;
+  margin-right: 10px !important;
+  padding: 10px !important;
+  border-radius: var(--card-radius) !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
+}
+.jdgm-carousel__item-container {
+  padding: 10px !important;
+}
+.jdgm-carousel--compact-theme {
+    @media (min-width: 450px) {
+      width: 70% !important;
+  }
+}
+.jdgm-carousel-title-and-link {
+  @media (min-width: 450px) {
+  width: 30% !important;
+  padding-right: 5px !important;
+  }
+}
+.jdgm-carousel-item__review-title, .jdgm-carousel-item__review-body, .jdgm-carousel-item__reviewer-name-wrapper, .jdgm-carousel-item__product-title, .jdgm-carousel-number-of-reviews{
+  color: #1c6da8 !important;
+}
+.jdgm-star {
+  color: #eaff02 !important;
+  text-shadow: 0 0 5px rgba(234,255,2,0.3) !important;
+}

@@ -1,0 +1,40 @@
+<!-- Start of Judge.me code -->
+<div class="jdgm-carousel-wrapper w-[95%]! mx-auto!">
+  {% assign jm_metafields = shop.metafields.judgeme %}
+  <div class="jdgm-carousel-title-and-link">
+    <h2 class="jdgm-carousel-title text-tize1! heading text-2xl sm:text-xl lg:text-3xl">Let customers speak for us</h2>
+    <p class="w-full flex justify-center items-end text-xl text-tize1 [text-shadow:_0_2px_2px_rgba(234,255,2,0.8)]">
+      <span class="text-5xl font-bold">{{ jm_metafields.all_reviews_rating | times: 2 }}</span>/10
+    </p>
+    <span class="jdgm-all-reviews-rating-wrapper" href="javascript:void(0)">
+      <span
+        style="display:block"
+        data-score="{{ jm_metafields.all_reviews_rating }}"
+        class="jdgm-all-reviews-rating text-2xl !text-tize3"
+        aria-label="{{ jm_metafields.all_reviews_rating }} stars"
+        tabindex="0"
+        role="img"
+      ></span>
+      <span
+        style="display: block"
+        class="jdgm-carousel-number-of-reviews"
+        data-number-of-reviews="{{ jm_metafields.all_reviews_count }}"
+      >
+        from {{ shop.metafields.judgeme.all_reviews_count }} reviews
+      </span>
+    </span>
+  </div>
+  {{ jm_metafields.featured_carousel }}
+</div>
+<!-- End of Judge.me code -->
+{% schema %}
+{
+  "name": "A Carousel Avis",
+  "settings": [],
+  "presets": [
+    {
+      "name": "A Carousel Avis"
+    }
+  ]
+}
+{% endschema %}
