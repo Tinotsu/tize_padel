@@ -1056,8 +1056,14 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
   }
   .w-100 {
     width: calc(var(--spacing) * 100);
@@ -1776,6 +1782,9 @@
   }
   .border-tize3 {
     border-color: var(--color-tize3);
+  }
+  .border-b-tize1 {
+    border-bottom-color: var(--color-tize1);
   }
   .border-b-tize1\/50 {
     border-bottom-color: color-mix(in oklab, var(--color-tize1) 50%, transparent);
