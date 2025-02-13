@@ -939,6 +939,9 @@
   .my-12 {
     margin-block: calc(var(--spacing) * 12);
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -953,6 +956,9 @@
     display: block;
     -webkit-box-orient: horizontal;
     -webkit-line-clamp: unset;
+  }
+  .\!hidden {
+    display: none !important;
   }
   .block {
     display: block;
@@ -1061,9 +1067,6 @@
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
-  }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
   }
   .w-100 {
     width: calc(var(--spacing) * 100);

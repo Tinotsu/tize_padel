@@ -13939,3 +13939,27 @@ div:where(.swal2-icon).swal2-question {
 div:where(.swal2-popup).swal2-modal.swal2-icon-question.swal2-show {
   border-radius: 15px !important;
 }
+
+/* ///////////////////////////// JDGM ////////////////////////////// */
+
+.jdgm-write-rev-link {
+  border-radius: 1000px !important;
+}
+.jdgm-histogram__bar-content {
+  border-radius: 1000px !important;
+}
+.jdgm-histogram__bar {
+  border-radius: 1000px !important;
+}
+#judgeme_product_reviews {
+@media (min-width: 1536px) { 
+    padding-left: 120px;
+    padding-right: 120px;
+}
+}
+.jdgm-rev-widg__title {
+  font-size: var(--title-sm) !important;
+  color: #1c6da8 !important;
+}
+
+
