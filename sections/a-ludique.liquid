@@ -1,0 +1,332 @@
+{%- liquid
+  assign withGradient = false
+  if section.settings.gradient_highlight != blank and section.settings.gradient_highlight != 'rgba(0,0,0,0)'
+    assign withGradient = true
+  endif
+
+  assign delay = 0
+-%}
+<div class="flex flex-col items-center justify-center">
+  {%- for block in section.blocks -%}
+    {%- if block.settings.heading != blank -%}
+      {%- assign delay = delay | plus: 1 -%}
+      <{{ block.settings.heading_tag }}
+        class="heading leading-none {{ block.settings.heading_size }}"
+        {{ block.shopify_attributes }}
+      >
+        {%- if block.settings.highlighted_text == 'none' -%}
+          <split-words
+            class="split-words flex flex-wrap"
+            data-animate="fade-up-large"
+            data-animate-delay="{{ delay | times: 250 }}"
+          >
+            {{- block.settings.heading -}}
+          </split-words>
+        {%- else -%}
+          {%- render 'highlighted-text',
+            content: block.settings.heading,
+            style: block.settings.highlighted_text,
+            scribble: block.settings.highlighted_scribble,
+            gradient: withGradient
+          -%}
+        {%- endif -%}
+      </{{ block.settings.heading_tag }}>
+    {%- endif -%}
+  {%- endfor -%}
+</div>
+
+<section class="ludique-section swiper-container relative py-12">
+  <div class="swiper-wrapper">
+    {% for block in section.blocks %}
+      {%- case block.type -%}
+        {%- when 'player' -%}
+          <div class="swiper-slide px-4 my-12">
+            <div class="border-tize3 border-2 h-fit w-100 flex flex-col rounded-2xl bg-tize1 shadow-lg transition-shadow duration-300 hover:shadow-2xl mx-auto overflow-hidden group">
+              <div class="relative h-fit w-full">
+                <img
+                  src="{{ block.settings.image | image_url: width: 400 }}"
+                  alt="{{ block.settings.name }}"
+                  class="w-full h-full object-cover"
+                  width=""
+                  height=""
+                >
+                <div class="absolute inset-0 -translate-y-32 md:-translate-y-0 md:inset-0 p-4 flex flex-col justify-end transition-transform duration-300 md:group-hover:-translate-y-40">
+                  <h3 class="text-2xl font-bold !text-tize3 mb-2 [text-shadow:_0_2px_4px_rgba(0,0,0,0.7)]">
+                    {{ block.settings.name }}
+                  </h3>
+                </div>
+                <div class="flex flex-col absolute backdrop-blur-lg inset-x-0 bottom-0 px-4 pt-2 h-36 md:h-45 justify-start md:translate-y-full transition-transform duration-300 md:group-hover:translate-y-0">
+                  <div class="space-y-1 md:text-xl [text-shadow:_0_2px_4px_rgba(0,0,0,0.4)]">
+                    <p class="text-white"><span class="font-semibold">Âge:</span> {{ block.settings.age }}</p>
+                    <p class="text-white">
+                      <span class="font-semibold">Nationalité:</span> {{ block.settings.nationality }}
+                    </p>
+                    <p class="text-white"><span class="font-semibold">Position:</span> {{ block.settings.position }}</p>
+                    <p class="text-white">
+                      <span class="font-semibold">Palmarès:</span> {{ block.settings.palmares }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      {%- endcase -%}
+    {% endfor %}
+  </div>
+
+  <!-- Navigation buttons -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+
+  <!-- Pagination -->
+  <div class="swiper-pagination"></div>
+</section>
+
+{% schema %}
+{
+  "name": "a-ludique",
+  "blocks": [
+    {
+      "type": "player",
+      "name": "Player",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "id": "age",
+          "label": "Age"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "nationality",
+          "label": "Nationalité"
+        },
+        {
+          "type": "text",
+          "id": "position",
+          "label": "Position"
+        },
+        {
+          "type": "text",
+          "id": "palmares",
+          "label": "Palmarès"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "t:sections.global.blocks.heading.name",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "t:sections.global.settings.heading.label",
+          "default": "Rich text"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "title-sm",
+              "label": "t:sections.global.settings.heading_size.options__1.label"
+            },
+            {
+              "value": "title-md",
+              "label": "t:sections.global.settings.heading_size.options__2.label"
+            },
+            {
+              "value": "title-lg tracking-heading",
+              "label": "t:sections.global.settings.heading_size.options__3.label"
+            },
+            {
+              "value": "title-xl tracking-heading",
+              "label": "t:sections.global.settings.heading_size.options__4.label"
+            }
+          ],
+          "default": "title-lg tracking-heading",
+          "label": "t:sections.global.settings.heading_size.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "options": [
+            {
+              "value": "h1",
+              "label": "t:sections.global.settings.heading_tag.options__1.label"
+            },
+            {
+              "value": "h2",
+              "label": "t:sections.global.settings.heading_tag.options__2.label"
+            },
+            {
+              "value": "h3",
+              "label": "t:sections.global.settings.heading_tag.options__3.label"
+            },
+            {
+              "value": "h4",
+              "label": "t:sections.global.settings.heading_tag.options__4.label"
+            },
+            {
+              "value": "h5",
+              "label": "t:sections.global.settings.heading_tag.options__5.label"
+            },
+            {
+              "value": "h6",
+              "label": "t:sections.global.settings.heading_tag.options__6.label"
+            },
+            {
+              "value": "div",
+              "label": "t:sections.global.settings.heading_tag.options__7.label"
+            },
+            {
+              "value": "span",
+              "label": "t:sections.global.settings.heading_tag.options__8.label"
+            },
+            {
+              "value": "p",
+              "label": "t:sections.global.settings.heading_tag.options__9.label"
+            }
+          ],
+          "default": "h2",
+          "label": "t:sections.global.settings.heading_tag.label",
+          "info": "t:sections.global.settings.heading_tag.info"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.global.settings.header__highlight.content",
+          "info": "t:sections.global.settings.header__highlight.info"
+        },
+        {
+          "type": "select",
+          "id": "highlighted_text",
+          "options": [
+            {
+              "value": "none",
+              "label": "t:sections.global.settings.highlighted_text.options__1.label"
+            },
+            {
+              "value": "text",
+              "label": "t:sections.global.settings.highlighted_text.options__2.label"
+            },
+            {
+              "value": "full_text",
+              "label": "t:sections.global.settings.highlighted_text.options__3.label"
+            },
+            {
+              "value": "half_text",
+              "label": "t:sections.global.settings.highlighted_text.options__4.label"
+            },
+            {
+              "value": "underline",
+              "label": "t:sections.global.settings.highlighted_text.options__5.label"
+            },
+            {
+              "value": "stencil",
+              "label": "t:sections.global.settings.highlighted_text.options__6.label"
+            },
+            {
+              "value": "scribble",
+              "label": "t:sections.global.settings.highlighted_text.options__7.label"
+            }
+          ],
+          "default": "none",
+          "label": "t:sections.global.settings.highlighted_text.label"
+        },
+        {
+          "type": "select",
+          "id": "highlighted_scribble",
+          "options": [
+            {
+              "value": "circle",
+              "label": "t:sections.global.settings.highlighted_scribble.options__1.label"
+            },
+            {
+              "value": "basic-underline",
+              "label": "t:sections.global.settings.highlighted_scribble.options__2.label"
+            },
+            {
+              "value": "sketch-underline",
+              "label": "t:sections.global.settings.highlighted_scribble.options__3.label"
+            },
+            {
+              "value": "squiggle-underline",
+              "label": "t:sections.global.settings.highlighted_scribble.options__4.label"
+            },
+            {
+              "value": "squiggle-underline-2",
+              "label": "t:sections.global.settings.highlighted_scribble.options__5.label"
+            }
+          ],
+          "default": "circle",
+          "label": "t:sections.global.settings.highlighted_scribble.label",
+          "info": "t:sections.global.settings.highlighted_scribble.info"
+        }
+      ]
+    }
+  ],
+  "settings": []
+}
+{% endschema %}
+
+<style>
+  .swiper-container {
+    padding: 0 2rem;
+  }
+  .swiper-slide {
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #1c6da8;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 1.5rem;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.ludique-section', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      grabCursor: true,
+      centeredSlides: false,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+  });
+</script>

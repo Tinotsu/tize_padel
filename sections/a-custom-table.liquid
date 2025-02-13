@@ -1,0 +1,67 @@
+{% if product.metafields.custom.raquette != blank
+  or product.metafields.custom.sexe != blank
+  or product.metafields.custom.surface != blank
+  or product.metafields.custom.mousse != blank
+  or product.metafields.custom.poids != blank
+  or product.metafields.custom.equilibre != blank
+  or product.metafields.custom.forme != blank
+%}
+  <div class="p-[20px] lg:px-[36px] xl:px-[48px] 2xl:px-[168px] lg:pb-24">
+    <hr class="w-full h-2 !border-tize1">
+    <div class="flex md:flex-col pt-2 text-tize1">
+      <div class="w-fit pr-4 !text-tize1 md:pt-2 md:mb-8 lg:mb-12">
+        <h4 class="!text-tize1 title-sm"><span>Aspects</span><span class="break-keep"> techniques</span></h4>
+      </div>
+      <div class="flex flex-col w-full">
+        {% if product.metafields.custom.raquette != blank %}
+          <div class="flex flex-col md:flex-row md:py-[0.1rem] md:border-t md:border-t-tize1/50 border-b border-b-tize1/50 md:text-xl">
+            <p class="font-bold md:w-1/3">Type de raquette:</p>
+            {{ product.metafields.custom.raquette }}
+          </div>
+        {% endif %}
+        {% if product.metafields.custom.sexe != blank %}
+          <div class="flex flex-col md:flex-row md:py-[0.1rem] border-b border-b-tize1/50 md:text-xl">
+            <p class="font-bold md:w-1/3">Sexe:</p>
+            {{ product.metafields.custom.sexe.value }}
+          </div>
+        {% endif %}
+        {% if product.metafields.custom.surface != blank %}
+          <div class="flex flex-col md:flex-row md:py-[0.1rem] border-b border-b-tize1/50 md:text-xl">
+            <p class="font-bold md:w-1/3">Surface:</p>
+            {{ product.metafields.custom.surface }}
+          </div>
+        {% endif %}
+        {% if product.metafields.custom.mousse != blank %}
+          <div class="flex flex-col md:flex-row md:py-[0.1rem] border-b border-b-tize1/50 md:text-xl">
+            <p class="font-bold md:w-1/3">Mousse:</p>
+            {{ product.metafields.custom.mousse }}
+          </div>
+        {% endif %}
+        {% if product.metafields.custom.poids != blank %}
+          <div class="flex flex-col md:flex-row md:py-[0.1rem] border-b border-b-tize1/50 md:text-xl">
+            <p class="font-bold md:w-1/3">Poids:</p>
+            {{ product.metafields.custom.poids.value }}
+          </div>
+        {% endif %}
+        {% if product.metafields.custom.equilibre != blank %}
+          <div class="flex flex-col md:flex-row md:py-[0.1rem] border-b border-b-tize1/50 md:text-xl">
+            <p class="font-bold md:w-1/3">Équilibre:</p>
+            {{ product.metafields.custom.equilibre }}
+          </div>
+        {% endif %}
+        {% if product.metafields.custom.forme != blank %}
+          <div class="flex flex-col md:flex-row md:py-[0.1rem] border-b border-b-tize1/50 md:text-xl">
+            <p class="font-bold md:w-1/3">Forme:</p>
+            {{ product.metafields.custom.forme }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endif %}
+{% schema %}
+{
+  "name": "A Custom Table",
+  "settings": []
+}
+{% endschema %}

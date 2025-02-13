@@ -1,0 +1,517 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_size": "text-base"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "product-title-sm",
+            "title_size_mobile": "product-title-sm",
+            "show_price": true,
+            "show_rating": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "text_size": "text-base"
+          }
+        },
+        "countdown": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Hurry up!",
+            "subheading": "Sale end in:",
+            "color_text": "#e11d48",
+            "color_background": "#fff1f2",
+            "gradient_background": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "color_swatch_type": "color",
+            "size_chart": ""
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 15,
+            "show_inventory_transfer": true,
+            "color_scheme": "accent-1"
+          }
+        },
+        "details": {
+          "type": "details",
+          "settings": {
+            "best_price_text": "Les meilleurs prix du web",
+            "delivery_text": "Livraison express en 48 à 72H",
+            "selection_text": "Le meilleur du padel sélectionné pour vous",
+            "sav_text": "Service client réactif et à votre écoute"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "pickup_availability": {
+          "type": "pickup_availability",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Partager",
+            "show_help_desk": true,
+            "help_label": "Need help?",
+            "help_type": "drawer",
+            "help_page": ""
+          }
+        },
+        "complementary": {
+          "type": "complementary",
+          "settings": {
+            "heading": "Pairs well with",
+            "product_limit": 4,
+            "show_vendor": false,
+            "show_price": true
+          }
+        },
+        "sticky_buy_button": {
+          "type": "sticky_buy_button",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "description",
+        "countdown",
+        "variant_picker",
+        "inventory",
+        "details",
+        "buy_buttons",
+        "pickup_availability",
+        "share",
+        "complementary",
+        "sticky_buy_button"
+      ],
+      "custom_css": [
+        "span.price__regular.whitespace-nowrap {color: #1c6da8;}",
+        "h1.heading.leading-none.product-title-sm.mobile\\:product-title-sm.col-span-full {color: #1c6da8;}",
+        ".flex.justify-between.items-center {color: #1c6da8;}",
+        "quantity-selector.quantity-selector.inline-flex.flex-auto {color: #1c6da8; border-color: #1c6da8;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": 66,
+        "gallery_layout": "scroll",
+        "thumbnail_position": "beside",
+        "image_ratio": "adapt_first",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "mobile_layout": "full_width",
+        "image_ratio_mobile": "adapt_first",
+        "mobile_thumbnail": false,
+        "padding_top": 0,
+        "padding_bottom": 84,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
+    "a-custom-table": {
+      "type": "a-custom-table",
+      "settings": {}
+    },
+    "product-details": {
+      "type": "product-details",
+      "blocks": {
+        "collapsible_tab-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "{{ product.metafields.custom.technologies_heading.value }}",
+            "content": "{{ product.metafields.custom.technologies_text | metafield_tag }}",
+            "metafields": ""
+          }
+        },
+        "collapsible_tab-2": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible row 2",
+            "content": "<p>Collapsible content 2</p>",
+            "metafields": ""
+          }
+        },
+        "collapsible_tab-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "{{ product.metafields.custom.pour_quel_type_de_joueur_for_which_type_of_player_.value.heading.value }}",
+            "content": "{{ product.metafields.custom.pour_quel_type_de_joueur_for_which_type_of_player_.value.technologies_text | metafield_tag }}",
+            "metafields": ""
+          }
+        },
+        "collapsible_tab-4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "{{ product.metafields.custom.l_avis_du_pro_tize_pro_s_opinion_.value.heading.value }}",
+            "content": "{{ product.metafields.custom.l_avis_du_pro_tize_pro_s_opinion_.value.text | metafield_tag }}",
+            "metafields": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab-1",
+        "collapsible_tab-2",
+        "collapsible_tab-3",
+        "collapsible_tab-4"
+      ],
+      "custom_css": [
+        "p {color: black;}",
+        "strong {color: black;}"
+      ],
+      "settings": {
+        "open_first_row": true,
+        "specifications_heading": "",
+        "heading": "INFORMATIONS",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#1c6da8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "1739440972b086f0a8": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_idRMfK": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_idRMfK"
+      ],
+      "settings": {
+        "enable_reviews_integration": true,
+        "color_text": "#171717",
+        "color_background": "#fafafa",
+        "gradient_background": "linear-gradient(310deg, rgba(17, 189, 251, 1) 15%, rgba(33, 249, 150, 1) 85%)",
+        "color_highlight": "#e11d48",
+        "gradient_highlight": "linear-gradient(180deg, rgba(240, 69, 87, 1), rgba(221, 39, 57, 1) 100%)",
+        "color_button_text": "#171717",
+        "color_button_background": "#fafafa",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "help-drawer": {
+      "type": "help-drawer",
+      "blocks": {
+        "content-1": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "icon": "rocket",
+            "heading": "Shipping Information",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#b45309",
+            "color_background": "#fffbeb",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-2": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "icon": "headphone",
+            "heading": "Customer Support",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#0369a1",
+            "color_background": "#f0f9ff",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-3": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "icon": "chat_bubble",
+            "heading": "FAQ’s",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#be123c",
+            "color_background": "#fff1f2",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-4": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "icon": "phone",
+            "heading": "Contact Us",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#4d7c0f",
+            "color_background": "#f7fee7",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content_ttEza3": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "heading": "Information",
+            "text": "<p>Share contact information, store details, and brand content with your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#fafafa",
+            "color_background": "#1f1f1f",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        }
+      },
+      "block_order": [
+        "content-1",
+        "content-2",
+        "content-3",
+        "content-4",
+        "content_ttEza3"
+      ],
+      "settings": {
+        "heading": "Besoin d'aide ?",
+        "description": "<p>Si vous avez des questions, n'hésitez pas à nous contacter. Nous vous répondrons dans les plus brefs délais, sous 24 heures les jours ouvrables.<br/><br/>Vous pouvez nous contacter par e-mail ou directement par live chat en bas à droite de l'écran. Un conseiller TIZE vous répondra dès que possible. </p>"
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-3": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-4": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-5": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {
+            "heading": "Didn’t find your answer?",
+            "text": "<p>Don't hestitate to contact us</p>",
+            "show_phone": false,
+            "avatar_height": 60,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "question-1",
+        "question-2",
+        "question-3",
+        "question-4",
+        "question-5",
+        "contact"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "with-background",
+        "heading": "FAQs",
+        "heading_size": "title-lg tracking-heading",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Please read our <a href=\"#\" title=\"FAQ's\">FAQs</a> page to find out more.</p>",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#ffffff",
+        "color_background": "#171717",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "padding_top": 84,
+        "padding_bottom": 84,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Vous pourriez aimer ceci",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#1c6da8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    },
+    "recently_viewed_AgcWxA": {
+      "type": "recently-viewed",
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Vus récemment",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#1c6da8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "a-custom-table",
+    "product-details",
+    "1739440972b086f0a8",
+    "help-drawer",
+    "faq",
+    "product-recommendations",
+    "recently_viewed_AgcWxA"
+  ]
+}

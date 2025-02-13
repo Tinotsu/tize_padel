@@ -1,0 +1,182 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:sections.footer-group.name",
+  "sections": {
+    "multicolumn-with-icons": {
+      "type": "multicolumn-with-icons",
+      "blocks": {
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "icon": "support",
+            "custom_icon": "",
+            "heading": "Service client",
+            "text": "<p>Disponible 6/7 et très rapide</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "icon": "box",
+            "custom_icon": "",
+            "heading": "Livraison gratuite",
+            "text": "<p>A partir de 70€ d'achat</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "icon": "creadit_card",
+            "custom_icon": "",
+            "heading": "Meilleurs prix",
+            "text": "<p>Aucun frais caché, nos prix sont les plus compétitifs du web</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column-4": {
+          "type": "column",
+          "settings": {
+            "icon": "shield",
+            "custom_icon": "",
+            "heading": "Paiement sécurisé",
+            "text": "<p>Vos données sont entre de bonnes mains</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column-1",
+        "column-2",
+        "column-3",
+        "column-4"
+      ],
+      "settings": {
+        "columns": 4,
+        "text_alignment": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#1c6da8",
+        "color_background": "#ffffff",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "divider": true,
+        "full_width": false,
+        "rounded": true
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "logo_social": {
+          "type": "logo_social",
+          "settings": {
+            "logo": "shopify://shop_images/Neon-yellow_90a8aef4-3e3a-44e6-92cb-1c55dc935f8d.png",
+            "logo_height": 50,
+            "show_social": false,
+            "enable_follow_on_shop": false
+          }
+        },
+        "link_list-1": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Nos produits",
+            "menu": "main-menu",
+            "container_width": 73
+          }
+        },
+        "link_list_wAiy3i": {
+          "type": "link_list",
+          "disabled": true,
+          "settings": {
+            "heading": "Nos marques",
+            "menu": "footer",
+            "container_width": 69
+          }
+        }
+      },
+      "block_order": [
+        "logo_social",
+        "link_list-1",
+        "link_list_wAiy3i"
+      ],
+      "custom_css": [
+        "span.text-base-2xl.font-medium {font-family: SuperLeague;}",
+        "p.h3.text-xl.leading-none.tracking-none.font-medium.lg\\:font-heading {font-family: SuperLeague;}"
+      ],
+      "settings": {
+        "enable_newsletter": true,
+        "newsletter_heading": "Newsletter Tize",
+        "newsletter_text": "<p>Inscrivez-vous et recevez nos offres et promotions personnalisées.</p>",
+        "show_social": true,
+        "enable_follow_on_shop": false,
+        "color_text": "#ffffff",
+        "color_background": "#1c6da8",
+        "gradient_background": "linear-gradient(180deg, rgba(28, 109, 168, 1) 28%, rgba(234, 255, 2, 1) 100%, rgba(234, 255, 2, 1) 100%)",
+        "color_button_text": "#1c6da8",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": true,
+        "enable_parallax": false
+      }
+    },
+    "footer-copyright": {
+      "type": "footer-copyright",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "enable_language_selector": false,
+        "enable_country_selector": false,
+        "show_policy": true,
+        "show_payment_icons": true,
+        "monochrome_payment_icons": false,
+        "show_copyright": true,
+        "copyright_text": "",
+        "color_text": "#1c6da8",
+        "color_background": "#ffffff",
+        "gradient_background": "",
+        "divider": false,
+        "full_width": true,
+        "rounded": true,
+        "enable_parallax": true
+      }
+    }
+  },
+  "order": [
+    "multicolumn-with-icons",
+    "footer",
+    "footer-copyright"
+  ]
+}

@@ -1,0 +1,60 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "overlay-group.json",
+  "context": {
+    "market": "fr"
+  },
+  "sections": {
+    "cart-drawer": {
+      "settings": {
+        "show_cart_note": true,
+        "cart_recommendations_heading": "Vous aimerez aussi",
+        "cart_recommendations_limit": 3,
+        "show_cart_recommendations_vendor": true,
+        "empty_cart_message": "<p>Vous ne savez pas par où commencer ? Jetez un oeil à nos raquettes de padel :<br/><br/></p>",
+        "empty_cart_collections": [
+          "raquettes"
+        ],
+        "recent_products_heading": "Vus récemment",
+        "recent_products_limit": 5,
+        "show_recent_products_vendor": true
+      },
+      "blocks": {}
+    },
+    "cookie-banner": {
+      "settings": {
+        "mode": "testing",
+        "text_alignment": "left",
+        "content_position": "left-0",
+        "color_drawer_button_text": "#eaff02",
+        "color_drawer_button_background": "#1c6da8"
+      },
+      "blocks": {
+        "heading": {
+          "settings": {
+            "heading": "Utilisation de cookies"
+          }
+        },
+        "text": {
+          "settings": {
+            "text": "<p>Ce site utilise des cookies pour améliorer l'expérience utilisateur et pour l'analyse.</p>"
+          }
+        },
+        "buttons": {
+          "settings": {
+            "button_label_1": "Accepter",
+            "button_label_2": "Decliner"
+          }
+        }
+      }
+    }
+  }
+}

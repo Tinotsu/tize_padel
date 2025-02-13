@@ -1,0 +1,771 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Bullpadel_3_7d17331c-8ede-4f2c-aee9-d486786b28bc.png",
+            "image_mobile": "shopify://shop_images/Bullpadel_3_8d9bfc2f-b05f-4694-809e-7dbc04a59c4b.png",
+            "heading": "Bullpadel",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "button_label": "NOS RAQUETTES",
+            "button_link": "shopify://collections/nox",
+            "button_secondary_style": true
+          }
+        },
+        "image_kA4iBg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Nox_ba1522a0-9316-4455-a4e5-f5cc4488c374.png",
+            "image_mobile": "shopify://shop_images/Nox_1ece2ee6-6db6-4765-b1d5-7e0e7596a8cd.png",
+            "heading": "NOX",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "button_label": "NOS RAQUETTES",
+            "button_link": "",
+            "button_secondary_style": true
+          }
+        },
+        "image_76TDrB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Bullpadel_de70a455-d1c0-41c4-b769-6d2438fcfb3b.png",
+            "image_mobile": "shopify://shop_images/Bullpadel_9f96cc40-c461-4bf1-8ccc-ce9cc6f4d73c.png",
+            "heading": "Nouveauté",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "button_label": "NEURON 25",
+            "button_link": "",
+            "button_secondary_style": true
+          }
+        }
+      },
+      "block_order": ["slide-1", "image_kA4iBg", "image_76TDrB"],
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "show_navigation": true,
+        "image_height": "750px",
+        "content_width": "small",
+        "image_height_mobile": "600px",
+        "color_text": "#1c6da8",
+        "color_background": "#ffffff",
+        "gradient_background": "",
+        "color_button_text": "#ffffff",
+        "color_button_background": "#1c6da8",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": true,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "rich_text_bypG9H": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PWbbAB": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>TIZE PADEL</em>",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "full_text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_biWPMD": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>Tize, votre nouvelle destination privilégiée pour les accessoires de padel. </h5><p>Que vous soyez un débutant curieux, un passionné de padel ou un expert confirmé, TIZE a tout ce qu'il vous faut pour répondre à vos besoins et à vos envies. Nous proposons une sélection soigneusement choisie des meilleures marques pour vous offrir des produits de qualité qui correspondent à vos attentes. </p><p>En tenant compte des compétences et spécificités de chacun, nous offrons également des boxes personnalisées pour guider nos clients dans leurs recherches et la création de leur kit de padel parfaitement adapté. </p>",
+            "text_size": "subtext-lg",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_inRPna": {
+          "type": "button",
+          "settings": {
+            "button_label": "FAIRE LE QUIZ",
+            "button_link": "shopify://pages/trouver-la-raquette-ideale",
+            "button_size": "md",
+            "button_secondary_style": false
+          }
+        }
+      },
+      "block_order": ["heading_PWbbAB", "text_biWPMD", "button_inRPna"],
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#1c6da8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 104,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "blocks": {
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "adidas",
+            "image": "shopify://shop_images/Adidas-Padel-Australia-All-for-PADEL_Ale-Galan_f77cb522-fc22-405a-ab12-8c49dc3f2d29.jpg",
+            "title": "Adidas",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#1c6da8",
+            "color_overlay": "#2b2b2b",
+            "overlay_opacity": 40
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "wilson",
+            "image": "shopify://shop_images/raquette-wilson-blade-team-v2.jpg",
+            "title": "Wilson",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "nox",
+            "image": "shopify://shop_images/1698159196_1698158783_1659998486_PLAYERS_NOX_ESTUDIO-575.webp",
+            "title": "Nox",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "collection-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "siux",
+            "image": "shopify://shop_images/Beat-Siux-joueur-de-padel_jpg.webp",
+            "title": "Siux",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "collection_pHKUYX": {
+          "type": "collection",
+          "settings": {
+            "collection": "bullpadel",
+            "image": "shopify://shop_images/BP.png",
+            "title": "BullPadel",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection-2",
+        "collection-3",
+        "collection-4",
+        "collection-5",
+        "collection_pHKUYX"
+      ],
+      "settings": {
+        "columns": 5,
+        "carousel_on_desktop": false,
+        "image_type": "collection",
+        "image_ratio": "square",
+        "show_products_count": true,
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#1c6da8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 96,
+        "padding_bottom": 52,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "debutant",
+            "products": [],
+            "title": "Débutant"
+          }
+        },
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "intermediaire",
+            "products": [],
+            "title": "Intermédiaire"
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "expert",
+            "products": [],
+            "title": "Expert"
+          }
+        }
+      },
+      "block_order": ["collection-1", "collection-2", "collection-3"],
+      "settings": {
+        "product_limit": 10,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "NOS RAQUETTES",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "QUEL NIVEAU ÊTES-VOUS ?",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#1c6da8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#eaff02",
+        "color_button_background": "#1c6da8",
+        "color_button_gradient": "",
+        "padding_top": 56,
+        "padding_bottom": 100,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    },
+    "scrolling-text-2": {
+      "type": "scrolling-text",
+      "blocks": {
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_b55af554-fdd9-4f94-bb09-b11b73839483.png",
+            "height": 60
+          }
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/5_965e78fe-921a-4aea-bd6a-81592bef8acd.png",
+            "height": 60
+          }
+        },
+        "image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4_52d27e83-500e-4ed2-aee6-1258fa86dada.png",
+            "height": 60
+          }
+        },
+        "image-4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2_e2c2cc3d-de25-41ab-a789-08311b2a888a.png",
+            "height": 60
+          }
+        },
+        "image_A4mehh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3_c1097fba-de4a-4ab7-9e8b-7e58dc5dec62.png",
+            "height": 80
+          }
+        }
+      },
+      "block_order": [
+        "image-1",
+        "image-2",
+        "image-3",
+        "image-4",
+        "image_A4mehh"
+      ],
+      "settings": {
+        "direction": "right",
+        "speed": 5,
+        "grid_horizontal": 140,
+        "enable_twin": true,
+        "enable_parallax": true,
+        "color_text": "",
+        "color_background": "#eaff02",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "featured_collection_7DKDCN": {
+      "type": "featured-collection",
+      "custom_css": [".rte.leading-normal.subtext-md {color: black;}"],
+      "settings": {
+        "collection": "adidas",
+        "products": [],
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Marque <em>de la semaine</em>",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "full_text",
+        "highlighted_scribble": "basic-underline",
+        "color_text": "#1c6da8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 100,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "video_with_text_overlay_exJWLQ": {
+      "type": "video-with-text-overlay",
+      "blocks": {
+        "subheading_TrFRjf": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "ADIDAS",
+            "subheading_size": "subtitle-md",
+            "secondary_color": true
+          }
+        },
+        "heading_fc7Pf3": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Metalbone team light 3.3",
+            "heading_size": "title-sm",
+            "heading_tag": "h1",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_dFaNa7": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Découvrir ce modèle",
+            "button_link": "",
+            "button_size": "md",
+            "button_secondary_style": false
+          }
+        }
+      },
+      "block_order": ["subheading_TrFRjf", "heading_fc7Pf3", "button_dFaNa7"],
+      "settings": {
+        "transparent_header": false,
+        "video": "shopify://files/videos/Product - ADIPOWER PRO-EDT.mp4",
+        "video_url": "",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "image_height": "600px",
+        "content_width": "small",
+        "content_position": "md:items-center md:justify-end",
+        "text_alignment": "right",
+        "video_url_mobile": "",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-center justify-center",
+        "text_alignment_mobile": "center",
+        "color_text": "#ffffff",
+        "color_highlight": "#eaff02",
+        "gradient_highlight": "",
+        "color_button_text": "#eaff02",
+        "color_button_background": "#1c6da8",
+        "color_button_gradient": "",
+        "color_overlay": "#2b2b2b",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": true
+      }
+    },
+    "featured_collection_cFwRXm": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "best-sellers",
+        "products": [],
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "BEST SELLERS",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#1c6da8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 116,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": true,
+        "rounded": true
+      }
+    },
+    "17274728103d286d56": {
+      "type": "apps",
+      "blocks": {
+        "presidio_quiz_kit_quiz_mVERAn": {
+          "type": "shopify://apps/quiz-kit-smart-product-finder/blocks/quiz/0b04f315-849a-4507-8339-7be41cc01813",
+          "settings": {
+            "key": "jYTP0Iv9VA"
+          }
+        }
+      },
+      "block_order": ["presidio_quiz_kit_quiz_mVERAn"],
+      "settings": {
+        "enable_reviews_integration": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
+    "testimonials-banner": {
+      "type": "testimonials-banner",
+      "blocks": {
+        "testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "text": "<p>J'ai joué au padel pendant plusieurs années et j'ai toujours eu du mal à trouver le bon équipement. Vos box personnalisées m'ont apporté exactement ce dont j'avais besoin pour améliorer mon jeu. Je recommande vivement !</p>",
+            "author": "Carlos, Marseille",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "4-stars",
+            "text": "<p>Depuis que j'ai découvert votre site, ma performance au padel a nettement amélioré. Les raquettes haut de gamme et les accessoires que j'ai achetés m'ont vraiment aidé à gagner en puissance et en précision. Merci !</p>",
+            "author": "Charlie, Paris",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "text": "<p>En tant que débutante, je me sentais perdue avec tous les choix disponibles. Votre site est clair et très bien fait pour s'y retrouver. D'autant plus que votre approche personnalisée avec les boxes fait toute la différence !</p>",
+            "author": "Julie, Lyon",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_8WtQBd": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "text": "<p>Ravie de ma raquette Bullpadel! Super contrôle et vraiment légère. Livraison rapide, rien à redire. </p>",
+            "author": "Camille, Annecy",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_CcgCED": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "text": "<p>J'ai acheté la Metalbone Carbon, parfaite pour mon niveau. Site fiable, raquette de qualité, tout est parfait!</p>",
+            "author": "Julien, Sallanches",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_3Rcymz": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "text": "<p>Quiz fait, raquette trouvée, qualité au rendez-vous. MERCI :)</p>",
+            "author": "Laura, Paris",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial-1",
+        "testimonial-3",
+        "testimonial-2",
+        "testimonial_8WtQBd",
+        "testimonial_CcgCED",
+        "testimonial_3Rcymz"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/Adidas_2_6dc2c0eb-8b3f-4a1b-aec5-054ed689be5d.png",
+        "image_height": "750px",
+        "content_position": "md:items-center md:justify-center",
+        "image_height_mobile": "500px",
+        "content_position_mobile": "items-center justify-center",
+        "color_text": "#eaff02",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 40,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "rounded": true,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "scrolling-text-1": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Elevate your game</strong>",
+            "text_size": 160,
+            "text_font": "body",
+            "stencil_text": false
+          }
+        }
+      },
+      "block_order": ["text"],
+      "settings": {
+        "direction": "left",
+        "speed": 28,
+        "grid_horizontal": 70,
+        "enable_twin": false,
+        "enable_parallax": true,
+        "color_text": "#1c6da8",
+        "color_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "rounded": true
+      }
+    },
+    "a-ludique": {
+      "type": "a-ludique",
+      "blocks": {
+        "heading_PWbbAB": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>LES JOUEURS</em>",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "full_text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "player-1": {
+          "type": "player",
+          "settings": {
+            "name": "Agustín Tapia",
+            "age": "25",
+            "image": "shopify://shop_images/04-TAPIA-2-662x1024.webp",
+            "nationality": "Argentin",
+            "position": "Droit",
+            "palmares": "Numéro 2 mondial, multiple vainqueur de tournois Premier Padel"
+          }
+        },
+        "player-2": {
+          "type": "player",
+          "settings": {
+            "name": "Alejandro Galán",
+            "age": "29",
+            "image": "shopify://shop_images/02-GALAN-662x1024.webp",
+            "nationality": "Espagnol",
+            "position": "Droit",
+            "palmares": "Numéro 3 mondial, multiples victoires sur le circuit professionnel"
+          }
+        },
+        "player-3": {
+          "type": "player",
+          "settings": {
+            "name": "Federico Chingotto",
+            "age": "27",
+            "image": "shopify://shop_images/08-CHINGOTTO-662x1024.webp",
+            "nationality": "Argentin",
+            "position": "Droit",
+            "palmares": "Numéro 4 mondial, réputé pour ses réflexes rapides"
+          }
+        },
+        "player-4": {
+          "type": "player",
+          "settings": {
+            "name": "Thomas Leygue",
+            "age": "22",
+            "image": "shopify://shop_images/100-Thomas-Leygue-662x1024.webp",
+            "nationality": "Français",
+            "position": "Droit",
+            "palmares": "Numéro 1 français, champion de France 2022"
+          }
+        },
+        "player-5": {
+          "type": "player",
+          "settings": {
+            "name": "Juan Lebrón",
+            "age": "29",
+            "image": "shopify://shop_images/2-Lebron-662x1024.webp",
+            "nationality": "Espagnol",
+            "position": "Droit",
+            "palmares": "Ancien numéro 1 mondial, jeu spectaculaire et agressif"
+          }
+        },
+        "player-6": {
+          "type": "player",
+          "settings": {
+            "name": "Franco Stupaczuk",
+            "age": "28",
+            "image": "shopify://shop_images/06-STUPACZUK-3-662x1024.webp",
+            "nationality": "Argentin",
+            "position": "Droit",
+            "palmares": "Numéro 5 mondial, vainqueur de plusieurs tournois majeurs"
+          }
+        },
+        "player-7": {
+          "type": "player",
+          "settings": {
+            "name": "Martín Di Nenno",
+            "age": "27",
+            "image": "shopify://shop_images/05-DI-NENNO-662x1024.webp",
+            "nationality": "Argentin",
+            "position": "Droit",
+            "palmares": "Numéro 6 mondial, connu pour son endurance et son mental"
+          }
+        }
+      },
+      "block_order": ["heading_PWbbAB", "player-1", "player-2", "player-3", "player-4", "player-5", "player-6", "player-7"],
+      "settings": {}
+    }
+  },
+
+  "order": [
+    "slideshow",
+    "rich_text_bypG9H",
+    "collection-list",
+    "featured-collections",
+    "scrolling-text-2",
+    "featured_collection_7DKDCN",
+    "video_with_text_overlay_exJWLQ",
+    "featured_collection_cFwRXm",
+    "17274728103d286d56",
+    "a-ludique",
+    "testimonials-banner",
+    "scrolling-text-1"
+  ]
+}
