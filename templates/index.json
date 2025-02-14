@@ -52,8 +52,16 @@
           }
         }
       },
-      "block_order": ["slide-1", "image_kA4iBg", "image_76TDrB"],
+      "block_order": [
+        "slide-1",
+        "image_kA4iBg",
+        "image_76TDrB"
+      ],
       "settings": {
+        "popup_title": "Trouvez votre raquette idéale",
+        "popup_text": "Répondez à quelques questions et découvrez une sélection de raquettes faites pour vous.",
+        "popup_button_text": "Démarrer le quiz",
+        "popup_button_link": "/pages/trouver-la-raquette-ideale",
         "autoplay": true,
         "autoplay_speed": 5,
         "show_navigation": true,
@@ -112,7 +120,11 @@
           }
         }
       },
-      "block_order": ["heading_PWbbAB", "text_biWPMD", "button_inRPna"],
+      "block_order": [
+        "heading_PWbbAB",
+        "text_biWPMD",
+        "button_inRPna"
+      ],
       "settings": {
         "text_alignment": "center",
         "text_alignment_mobile": "center",
@@ -277,7 +289,11 @@
           }
         }
       },
-      "block_order": ["collection-1", "collection-2", "collection-3"],
+      "block_order": [
+        "collection-1",
+        "collection-2",
+        "collection-3"
+      ],
       "settings": {
         "product_limit": 10,
         "columns": 4,
@@ -371,7 +387,9 @@
     },
     "featured_collection_7DKDCN": {
       "type": "featured-collection",
-      "custom_css": [".rte.leading-normal.subtext-md {color: black;}"],
+      "custom_css": [
+        ".rte.leading-normal.subtext-md {color: black;}"
+      ],
       "settings": {
         "collection": "adidas",
         "products": [],
@@ -438,7 +456,11 @@
           }
         }
       },
-      "block_order": ["subheading_TrFRjf", "heading_fc7Pf3", "button_dFaNa7"],
+      "block_order": [
+        "subheading_TrFRjf",
+        "heading_fc7Pf3",
+        "button_dFaNa7"
+      ],
       "settings": {
         "transparent_header": false,
         "video": "shopify://files/videos/Product - ADIPOWER PRO-EDT.mp4",
@@ -503,6 +525,10 @@
         "rounded": true
       }
     },
+    "a-carousel-avis": {
+      "type": "a-carousel-avis",
+      "settings": {}
+    },
     "17274728103d286d56": {
       "type": "apps",
       "blocks": {
@@ -513,7 +539,9 @@
           }
         }
       },
-      "block_order": ["presidio_quiz_kit_quiz_mVERAn"],
+      "block_order": [
+        "presidio_quiz_kit_quiz_mVERAn"
+      ],
       "settings": {
         "enable_reviews_integration": true,
         "color_text": "",
@@ -531,8 +559,108 @@
         "rounded": false
       }
     },
-    "a-carousel-avis": {
-      "type": "a-carousel-avis"
+    "a-ludique": {
+      "type": "a-ludique",
+      "blocks": {
+        "heading_PWbbAB": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em>LES JOUEURS</em>",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "full_text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "player-1": {
+          "type": "player",
+          "settings": {
+            "name": "Agustín Tapia",
+            "age": "25",
+            "image": "shopify://shop_images/04-TAPIA-2-662x1024.webp",
+            "nationality": "Argentin",
+            "position": "Droit",
+            "palmares": "Numéro 2 mondial, multiple vainqueur de tournois Premier Padel"
+          }
+        },
+        "player-2": {
+          "type": "player",
+          "settings": {
+            "name": "Alejandro Galán",
+            "age": "29",
+            "image": "shopify://shop_images/02-GALAN-662x1024.webp",
+            "nationality": "Espagnol",
+            "position": "Droit",
+            "palmares": "Numéro 3 mondial, multiples victoires sur le circuit professionnel"
+          }
+        },
+        "player-3": {
+          "type": "player",
+          "settings": {
+            "name": "Federico Chingotto",
+            "age": "27",
+            "image": "shopify://shop_images/08-CHINGOTTO-662x1024.webp",
+            "nationality": "Argentin",
+            "position": "Droit",
+            "palmares": "Numéro 4 mondial, réputé pour ses réflexes rapides"
+          }
+        },
+        "player-4": {
+          "type": "player",
+          "settings": {
+            "name": "Thomas Leygue",
+            "age": "22",
+            "image": "shopify://shop_images/100-Thomas-Leygue-662x1024.webp",
+            "nationality": "Français",
+            "position": "Droit",
+            "palmares": "Numéro 1 français, champion de France 2022"
+          }
+        },
+        "player-5": {
+          "type": "player",
+          "settings": {
+            "name": "Juan Lebrón",
+            "age": "29",
+            "image": "shopify://shop_images/2-Lebron-662x1024.webp",
+            "nationality": "Espagnol",
+            "position": "Droit",
+            "palmares": "Ancien numéro 1 mondial, jeu spectaculaire et agressif"
+          }
+        },
+        "player-6": {
+          "type": "player",
+          "settings": {
+            "name": "Franco Stupaczuk",
+            "age": "28",
+            "image": "shopify://shop_images/06-STUPACZUK-3-662x1024.webp",
+            "nationality": "Argentin",
+            "position": "Droit",
+            "palmares": "Numéro 5 mondial, vainqueur de plusieurs tournois majeurs"
+          }
+        },
+        "player-7": {
+          "type": "player",
+          "settings": {
+            "name": "Martín Di Nenno",
+            "age": "27",
+            "image": "shopify://shop_images/05-DI-NENNO-662x1024.webp",
+            "nationality": "Argentin",
+            "position": "Droit",
+            "palmares": "Numéro 6 mondial, connu pour son endurance et son mental"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PWbbAB",
+        "player-1",
+        "player-2",
+        "player-3",
+        "player-4",
+        "player-5",
+        "player-6",
+        "player-7"
+      ],
+      "settings": {}
     },
     "testimonials-banner": {
       "type": "testimonials-banner",
@@ -645,7 +773,9 @@
           }
         }
       },
-      "block_order": ["text"],
+      "block_order": [
+        "text"
+      ],
       "settings": {
         "direction": "left",
         "speed": 28,
@@ -660,103 +790,8 @@
         "divider": false,
         "rounded": true
       }
-    },
-    "a-ludique": {
-      "type": "a-ludique",
-      "blocks": {
-        "heading_PWbbAB": {
-          "type": "heading",
-          "settings": {
-            "heading": "<em>LES JOUEURS</em>",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "full_text",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "player-1": {
-          "type": "player",
-          "settings": {
-            "name": "Agustín Tapia",
-            "age": "25",
-            "image": "shopify://shop_images/04-TAPIA-2-662x1024.webp",
-            "nationality": "Argentin",
-            "position": "Droit",
-            "palmares": "Numéro 2 mondial, multiple vainqueur de tournois Premier Padel"
-          }
-        },
-        "player-2": {
-          "type": "player",
-          "settings": {
-            "name": "Alejandro Galán",
-            "age": "29",
-            "image": "shopify://shop_images/02-GALAN-662x1024.webp",
-            "nationality": "Espagnol",
-            "position": "Droit",
-            "palmares": "Numéro 3 mondial, multiples victoires sur le circuit professionnel"
-          }
-        },
-        "player-3": {
-          "type": "player",
-          "settings": {
-            "name": "Federico Chingotto",
-            "age": "27",
-            "image": "shopify://shop_images/08-CHINGOTTO-662x1024.webp",
-            "nationality": "Argentin",
-            "position": "Droit",
-            "palmares": "Numéro 4 mondial, réputé pour ses réflexes rapides"
-          }
-        },
-        "player-4": {
-          "type": "player",
-          "settings": {
-            "name": "Thomas Leygue",
-            "age": "22",
-            "image": "shopify://shop_images/100-Thomas-Leygue-662x1024.webp",
-            "nationality": "Français",
-            "position": "Droit",
-            "palmares": "Numéro 1 français, champion de France 2022"
-          }
-        },
-        "player-5": {
-          "type": "player",
-          "settings": {
-            "name": "Juan Lebrón",
-            "age": "29",
-            "image": "shopify://shop_images/2-Lebron-662x1024.webp",
-            "nationality": "Espagnol",
-            "position": "Droit",
-            "palmares": "Ancien numéro 1 mondial, jeu spectaculaire et agressif"
-          }
-        },
-        "player-6": {
-          "type": "player",
-          "settings": {
-            "name": "Franco Stupaczuk",
-            "age": "28",
-            "image": "shopify://shop_images/06-STUPACZUK-3-662x1024.webp",
-            "nationality": "Argentin",
-            "position": "Droit",
-            "palmares": "Numéro 5 mondial, vainqueur de plusieurs tournois majeurs"
-          }
-        },
-        "player-7": {
-          "type": "player",
-          "settings": {
-            "name": "Martín Di Nenno",
-            "age": "27",
-            "image": "shopify://shop_images/05-DI-NENNO-662x1024.webp",
-            "nationality": "Argentin",
-            "position": "Droit",
-            "palmares": "Numéro 6 mondial, connu pour son endurance et son mental"
-          }
-        }
-      },
-      "block_order": ["heading_PWbbAB", "player-1", "player-2", "player-3", "player-4", "player-5", "player-6", "player-7"],
-      "settings": {}
     }
   },
-
   "order": [
     "slideshow",
     "rich_text_bypG9H",
@@ -770,6 +805,6 @@
     "17274728103d286d56",
     "a-ludique",
     "testimonials-banner",
-    "scrolling-text-1",
+    "scrolling-text-1"
   ]
 }

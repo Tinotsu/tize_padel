@@ -1919,9 +1919,6 @@
   .stroke-none {
     stroke: none;
   }
-  .stroke-tize1 {
-    stroke: var(--color-tize1);
-  }
   .stroke-1 {
     stroke-width: 1;
   }
