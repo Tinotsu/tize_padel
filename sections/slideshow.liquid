@@ -3,19 +3,19 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     Swal.fire({
-  title: "<strong>Trouvez votre raquette idéale</strong>",
-  icon: "question",
-  html: `
-    <p class="!text-tize1">Répondez à quelques questions et découvrez une sélection de raquettes faites pour vous.</p>
-  `,
-  showCloseButton: false,
-  showCancelButton: false,
-  focusConfirm: false,
-  confirmButtonText: `<a href="/pages/trouver-la-raquette-ideale" class="!text-tize1 font-bold">Démarrer le quiz</a>`,
-  confirmButtonAriaLabel: "",
-  cancelButtonText: ``,
-  cancelButtonAriaLabel: ""
-});
+      title: "{{ section.settings.popup_title }}",
+      icon: "question",
+      html: `
+        <p class="!text-tize1">{{ section.settings.popup_text }}</p>
+      `,
+      showCloseButton: false,
+      showCancelButton: false,
+      focusConfirm: false,
+      confirmButtonText: `<a href="{{ section.settings.popup_button_link }}" class="!text-tize1 font-bold">{{ section.settings.popup_button_text }}</a>`,
+      confirmButtonAriaLabel: "",
+      cancelButtonText: ``,
+      cancelButtonAriaLabel: ""
+    });
   });
 </script>
 
@@ -291,6 +291,30 @@
   "name": "t:sections.slideshow.name",
   "max_blocks": 5,
   "settings": [
+    {
+      "type": "text",
+      "id": "popup_title",
+      "label": "Popup Title",
+      "default": "<strong>Trouvez votre raquette idéale</strong>"
+    },
+    {
+      "type": "text",
+      "id": "popup_text",
+      "label": "Popup Text",
+      "default": "Répondez à quelques questions et découvrez une sélection de raquettes faites pour vous."
+    },
+    {
+      "type": "text",
+      "id": "popup_button_text",
+      "label": "Popup Button Text",
+      "default": "Démarrer le quiz"
+    },
+    {
+      "type": "text",
+      "id": "popup_button_link",
+      "label": "Popup Button Link",
+      "default": "/pages/trouver-la-raquette-ideale"
+    },
     {
       "type": "checkbox",
       "id": "autoplay",
