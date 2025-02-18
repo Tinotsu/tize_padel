@@ -6,82 +6,130 @@
 
   assign delay = 0
 -%}
-<div class="flex flex-col items-center justify-center">
-  {%- for block in section.blocks -%}
-    {%- if block.settings.heading != blank -%}
-      {%- assign delay = delay | plus: 1 -%}
-      <{{ block.settings.heading_tag }}
-        class="heading leading-none {{ block.settings.heading_size }}"
-        {{ block.shopify_attributes }}
-      >
-        {%- if block.settings.highlighted_text == 'none' -%}
-          <split-words
-            class="split-words flex flex-wrap"
-            data-animate="fade-up-large"
-            data-animate-delay="{{ delay | times: 250 }}"
-          >
-            {{- block.settings.heading -}}
-          </split-words>
-        {%- else -%}
-          {%- render 'highlighted-text',
-            content: block.settings.heading,
-            style: block.settings.highlighted_text,
-            scribble: block.settings.highlighted_scribble,
-            gradient: withGradient
-          -%}
-        {%- endif -%}
-      </{{ block.settings.heading_tag }}>
-    {%- endif -%}
-  {%- endfor -%}
-</div>
+<div class="py-32">
+  <div class="flex flex-col items-center justify-center">
+    {%- for block in section.blocks -%}
+      {%- if block.settings.heading != blank -%}
+        {%- assign delay = delay | plus: 1 -%}
+        <{{ block.settings.heading_tag }}
+          class="!text-tize1 heading leading-none {{ block.settings.heading_size }}"
+          {{ block.shopify_attributes }}
+        >
+          {%- if block.settings.highlighted_text == 'none' -%}
+            <split-words
+              class="split-words flex flex-wrap"
+              data-animate="fade-up-large"
+              data-animate-delay="{{ delay | times: 250 }}"
+            >
+              {{- block.settings.heading -}}
+            </split-words>
+          {%- else -%}
+            {%- render 'highlighted-text',
+              content: block.settings.heading,
+              style: block.settings.highlighted_text,
+              scribble: block.settings.highlighted_scribble,
+              gradient: withGradient
+            -%}
+          {%- endif -%}
+        </{{ block.settings.heading_tag }}>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
 
-<section class="ludique-section swiper-container relative py-12">
-  <div class="swiper-wrapper">
-    {% for block in section.blocks %}
-      {%- case block.type -%}
-        {%- when 'player' -%}
-          <div class="swiper-slide px-4 my-12">
-            <div class="border-tize3 border-2 h-fit w-100 flex flex-col rounded-2xl bg-tize1 shadow-lg transition-shadow duration-300 hover:shadow-2xl mx-auto overflow-hidden group">
-              <div class="relative h-fit w-full">
-                <img
-                  src="{{ block.settings.image | image_url: width: 400 }}"
-                  alt="{{ block.settings.name }}"
-                  class="w-full h-full object-cover"
-                  width=""
-                  height=""
-                >
-                <div class="absolute inset-0 -translate-y-32 md:-translate-y-0 md:inset-0 p-4 flex flex-col justify-end transition-transform duration-300 md:group-hover:-translate-y-35">
-                  <h3 class="text-2xl font-bold !text-tize3 mb-2 [text-shadow:_0_2px_4px_rgba(0,0,0,0.7)]">
-                    {{ block.settings.name }}
-                  </h3>
-                </div>
-                <div class="flex flex-col absolute backdrop-blur-lg inset-x-0 bottom-0 px-4 pt-2 h-36 md:h-40 justify-start md:translate-y-full transition-transform duration-300 md:group-hover:translate-y-0">
-                  <div class="space-y-1 md:text-lg [text-shadow:_0_2px_4px_rgba(0,0,0,0.4)]">
-                    <p class="text-white"><span class="font-semibold">Âge:</span> {{ block.settings.age }}</p>
-                    <p class="text-white">
-                      <span class="font-semibold">Nationalité:</span> {{ block.settings.nationality }}
-                    </p>
-                    <p class="text-white"><span class="font-semibold">Position:</span> {{ block.settings.position }}</p>
-                    <p class="text-white">
-                      <span class="font-semibold">Palmarès:</span> {{ block.settings.palmares }}
-                    </p>
+  <section class="ludique-section swiper-container relative py-12">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        {%- case block.type -%}
+          {%- when 'player' -%}
+            <div class="swiper-slide px-4 my-12">
+              <div class="h-fit w-50 flex flex-col rounded-2xl bg-[#fafafa] shadow-lg transition-shadow duration-300 hover:shadow-2xl mx-auto overflow-hidden group">
+                <div class="relative h-fit w-full">
+                  <img
+                    src="{{ block.settings.image | image_url: width: 400 }}"
+                    alt="{{ block.settings.name }}"
+                    class="w-full h-full object-cover"
+                    width=""
+                    height=""
+                  >
+                  <div class="absolute inset-0 -translate-y-30 md:-translate-y-0 md:inset-0 p-2 flex flex-col justify-end transition-transform duration-300 md:group-hover:-translate-y-30">
+                    <h3 class="text-xl font-bold !text-tize1 mb-2 leading-none [text-shadow:_0_2px_4px_rgba(0,0,0,0.7)]">
+                      {{ block.settings.name }}
+                    </h3>
+                  </div>
+                  <div class="flex flex-col absolute backdrop-blur-lg inset-x-0 bottom-0 px-4 pt-2 h-30 justify-start md:translate-y-full transition-transform duration-300 md:group-hover:translate-y-0">
+                    <div class="space-y-1 text-[12px] md:text-[10px] [text-shadow:_0_2px_4px_rgba(0,0,0,0.4)]">
+                      <p class="text-tize1"><span class="font-semibold">Âge:</span> {{ block.settings.age }}</p>
+                      <p class="text-tize1">
+                        <span class="font-semibold">Nationalité:</span> {{ block.settings.nationality }}
+                      </p>
+                      <p class="text-tize1">
+                        <span class="font-semibold">Position:</span> {{ block.settings.position }}
+                      </p>
+                      <p class="text-tize1">
+                        <span class="font-semibold">Palmarès:</span> {{ block.settings.palmares }}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-      {%- endcase -%}
-    {% endfor %}
-  </div>
+        {%- endcase -%}
+      {% endfor %}
+    </div>
 
-  <!-- Navigation buttons -->
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
+    <!-- Navigation buttons -->
+    <div class="indicators lg:block hidden">
+      <div class="swiper-button-prev-custom">
+        <button class="button button--secondary" is="hover-button">
+          <span class="btn-fill !bg-tize1" data-fill></span>
+          <span class="btn-text">
+            {%- render 'icon', icon: 'chevron-left', class: 'transform' -%}
+          </span>
+        </button>
+      </div>
 
-  <!-- Pagination -->
-  <div class="swiper-pagination"></div>
-</section>
+      <div class="swiper-button-next-custom">
+        <button class="button button--secondary border-tize1 after:border-tize1" is="hover-button">
+          <span class="btn-fill !bg-tize1" data-fill></span>
+          <span class="btn-text">
+            {%- render 'icon', icon: 'chevron-right', class: 'transform' -%}
+          </span>
+        </button>
+      </div>
+    </div>
+    <!--
+      Pagination
+      <div class="swiper-pagination"></div>
+    -->
+  </section>
+</div>
+<style>
+  /* Hide default navigation */
+  .button:after {
+    border-color: #1c6da8;
+  }
+  .swiper-button-prev-custom {
+    left: 20px; /* Adjust this value for horizontal positioning */
+    right: auto; /* Override any previous left positioning */
+    transform: translateY(var(--motion-translateY));
+    --motion-translateY: -76%;
+  }
 
+  .swiper-button-next-custom {
+    right: 20px; /* Position prev button on the left */
+    left: auto;
+  }
+
+  /* Common button styles */
+  .swiper-button-next-custom,
+  .swiper-button-prev-custom {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+  }
+</style>
 {% schema %}
 {
   "name": "a-ludique",
@@ -310,8 +358,8 @@
       grabCursor: true,
       centeredSlides: false,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next-custom',
+        prevEl: '.swiper-button-prev-custom',
       },
       pagination: {
         el: '.swiper-pagination',
@@ -319,12 +367,12 @@
       },
       breakpoints: {
         640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
+          slidesPerView: 3,
+          spaceBetween: 5,
         },
         1024: {
-          slidesPerView: 3,
-          spaceBetween: 30,
+          slidesPerView: 5,
+          spaceBetween: 20,
         },
       },
     });

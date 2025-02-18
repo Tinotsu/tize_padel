@@ -249,6 +249,10 @@
         "rounded": false
       }
     },
+    "a-carousel-avis": {
+      "type": "a-carousel-avis",
+      "settings": {}
+    },
     "help-drawer": {
       "type": "help-drawer",
       "blocks": {
@@ -508,6 +512,7 @@
     "main-product",
     "a-custom-table",
     "product-details",
+    "a-carousel-avis",
     "1739440972b086f0a8",
     "help-drawer",
     "faq",
