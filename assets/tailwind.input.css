@@ -1,8 +1,7 @@
 @import "tailwindcss";
 @theme {
-    --color-tize1: #1C6DA8; /* bleu */
-    --color-tize2: #E11D48; /* rouge */
-    --color-tize3: #eaff02; /* jaune fluo */
-    --color-tize4: #b45309; /* orange */
+  --color-tize1: #1c6da8; /* bleu */
+  --color-tize2: #e11d48; /* rouge */
+  --color-tize3: #eaff02; /* jaune fluo */
+  --color-tize4: #b45309; /* orange */
 }
-

@@ -13900,6 +13900,12 @@ variant-radios.variant-picker.grid.gap-5.no-js-hidden {
 /* ***************************************************************** */
 /* ***************************************************************** */
 
+/* ///////////////// "Caractéristiques Techniques" ///////////////// */
+
+h3.MsoNormal {
+  color: #1c6da8 !important;
+}
+
 /* ///////////////////////////// QUIZ ////////////////////////////// */
 
 #quiz-kit-intro-content-image {
@@ -13936,10 +13942,9 @@ div:where(.swal2-icon).swal2-question {
   color: #1c6da8 !important;
 }
 
-div:where(.swal2-popup).swal2-modal.swal2-icon-question.swal2-show {
-  border-radius: 15px !important;
+div:where(.swal2-container) div:where(.swal2-popup) {
+  border-radius: 18px !important;
 }
-
 /* ///////////////////////////// JDGM ////////////////////////////// */
 
 .jdgm-write-rev-link {
