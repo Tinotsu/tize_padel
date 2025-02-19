@@ -529,7 +529,7 @@
       "type": "a-carousel-avis",
       "settings": {}
     },
-    "17274728103d286d56": {
+    /*"17274728103d286d56": {
       "type": "apps",
       "blocks": {
         "presidio_quiz_kit_quiz_mVERAn": {
@@ -558,7 +558,7 @@
         "full_width": true,
         "rounded": false
       }
-    },
+    },*/
     "a-ludique": {
       "type": "a-ludique",
       "blocks": {
