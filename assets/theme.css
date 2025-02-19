@@ -13906,6 +13906,14 @@ h3.MsoNormal {
   color: #1c6da8 !important;
 }
 
+/* /////////////////////////// CHAT APP //////////////////////////// */
+
+#ShopifyChat {
+  @media (min-width: 640px) {
+    transform: translateY(70px) !important;
+  }
+}
+
 /* ///////////////////////////// QUIZ ////////////////////////////// */
 
 #quiz-kit-intro-content-image {
