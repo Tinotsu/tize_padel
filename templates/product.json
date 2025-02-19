@@ -110,7 +110,6 @@
       "block_order": [
         "vendor",
         "title",
-        "description",
         "countdown",
         "variant_picker",
         "inventory",
@@ -119,7 +118,8 @@
         "pickup_availability",
         "share",
         "complementary",
-        "sticky_buy_button"
+        "sticky_buy_button",
+        "description"
       ],
       "custom_css": [
         "span.price__regular.whitespace-nowrap {color: #1c6da8;}",

@@ -13967,6 +13967,9 @@ div:where(.swal2-container) div:where(.swal2-popup) {
   color: #1c6da8 !important;
   text-align: left !important;
 }
+.jdgm-rev-widg {
+  padding: 0 !important;
+}
 .jdgm-carousel-item {
   background-color: rgb(var(--color-placeholder)) !important;
   margin-right: 10px !important;
