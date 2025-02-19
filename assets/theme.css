@@ -13962,13 +13962,9 @@ div:where(.swal2-container) div:where(.swal2-popup) {
     padding-right: 120px;
   }
 }
-.jdgm-rev-widg__title {
-  font-size: var(--title-sm) !important;
-  color: #1c6da8 !important;
-  text-align: left !important;
-}
-.jdgm-rev-widg {
-  padding: 0 !important;
+.jdgm-carousel-item {
+  width: 31% !important;
+  margin: 0 1.5% !important;
 }
 .jdgm-carousel-item {
   background-color: rgb(var(--color-placeholder)) !important;
@@ -13980,22 +13976,7 @@ div:where(.swal2-container) div:where(.swal2-popup) {
 .jdgm-carousel__item-container {
   padding: 10px !important;
 }
-.jdgm-carousel--compact-theme {
-  @media (min-width: 450px) {
-    width: 70% !important;
-  }
-}
-.jdgm-carousel-title-and-link {
-  @media (min-width: 450px) {
-    width: 30% !important;
-    padding-right: 5px !important;
-  }
-}
-.jdgm-carousel-title {
-  @media (min-width: 768px) {
-    text-align: left !important;
-  }
-}
+
 .jdgm-carousel-item__review-title,
 .jdgm-carousel-item__review-body,
 .jdgm-carousel-item__reviewer-name-wrapper,
@@ -14012,4 +13993,7 @@ div:where(.swal2-container) div:where(.swal2-popup) {
 }
 .jdgm-carousel__right-arrow {
   border-color: #ffffff !important;
+}
+.jdgm-carousel--compact-theme.jdgm-carousel {
+  width: 100% !important;
 }

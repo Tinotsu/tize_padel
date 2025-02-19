@@ -1,14 +1,13 @@
 <!-- Start of Judge.me code -->
-<div class="jdgm-carousel-wrapper w-[95%]! mx-auto!">
+<div class="flex flex-col pt-24">
   {% assign jm_metafields = shop.metafields.judgeme %}
-  <div class="jdgm-carousel-title-and-link">
-    <h2 class="jdgm-carousel-title text-tize1! text-center md:text-left heading text-2xl sm:text-xl lg:text-3xl">Let customers speak for us</h2>
-    <p class="w-full flex justify-center md:justify-start items-end text-xl text-tize1 [text-shadow:_0_2px_2px_rgba(234,255,2,0.8)]">
+  <div class="jdgm-carousel-title-and-link !w-full !h-fit">
+    <h2 class="jdgm-carousel-title text-tize1! text-center heading {{ section.settings.heading_size }}">Let customers speak for us</h2>
+    <p class="w-full flex justify-center items-end text-xl text-tize1 [text-shadow:_0_2px_2px_rgba(234,255,2,0.8)]">
       <span class="text-5xl font-bold">{{ jm_metafields.all_reviews_rating | times: 2 }}</span>/10
     </p>
-    <span class="jdgm-all-reviews-rating-wrapper md:w-fit" href="javascript:void(0)">
+    <div class="jdgm-all-reviews-rating-wrapper flex flex-col !w-full justify-center items-center" href="javascript:void(0)">
       <span
-        style="display:block"
         data-score="{{ jm_metafields.all_reviews_rating }}"
         class="jdgm-all-reviews-rating text-2xl !text-tize3"
         aria-label="{{ jm_metafields.all_reviews_rating }} stars"
@@ -16,29 +15,12 @@
         role="img"
       ></span>
       <span
-        style="display: block"
         class="jdgm-carousel-number-of-reviews"
         data-number-of-reviews="{{ jm_metafields.all_reviews_count }}"
       >
         from {{ shop.metafields.judgeme.all_reviews_count }} reviews
       </span>
-    </span>
-    <!--
-    <div class="flex justify-center items-center gap-2 w-full">
-      <button class="button button--secondary " type="button" is="previous-button" aria-controls="Slider-{{ section.id }}" aria-label="{{ 'general.pagination.previous' | t | escape }}" disabled>
-        <span class="btn-fill" data-fill></span>
-        <span class="btn-text">
-          {%- render 'icon', icon: 'chevron-left', class: 'transform' -%}
-        </span>
-      </button>
-      <button class="button button--secondary" type="button">
-        <span class="btn-fill" data-fill></span>
-        <span class="btn-text">
-          {%- render 'icon', icon: 'chevron-right', class: 'transform' -%}
-        </span>
-      </button>
     </div>
-    -->
   </div>
   {{ jm_metafields.featured_carousel }}
 </div>
@@ -46,7 +28,14 @@
 {% schema %}
 {
   "name": "A Carousel Avis",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_size",
+      "label": "Heading Size",
+      "default": "title-md tracking-heading pb-4"
+    }
+  ],
   "presets": [
     {
       "name": "A Carousel Avis"

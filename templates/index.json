@@ -566,7 +566,7 @@
           "type": "heading",
           "settings": {
             "heading": "<em>LES JOUEURS</em>",
-            "heading_size": "title-lg tracking-heading",
+            "heading_size": "title-md tracking-heading",
             "heading_tag": "h2",
             "highlighted_text": "full_text",
             "highlighted_scribble": "circle"
