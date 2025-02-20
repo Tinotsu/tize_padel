@@ -221,7 +221,7 @@
         "rounded": false
       }
     },
-    "1739440972b086f0a8": {
+    /*"1739440972b086f0a8": {
       "type": "apps",
       "blocks": {
         "judge_me_reviews_review_widget_idRMfK": {
@@ -248,7 +248,7 @@
         "full_width": false,
         "rounded": false
       }
-    },
+    },*/
     "a-carousel-avis": {
       "type": "a-carousel-avis",
       "settings": {}
