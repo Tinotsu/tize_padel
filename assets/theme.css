@@ -13938,6 +13938,7 @@ h3.MsoNormal {
 
 .swal2-title {
   color: #1c6da8;
+  font-size: 18px;
 }
 div:where(.swal2-container) button:where(.swal2-styled) {
   box-shadow: 0 0 0 3px #1c6da8 !important;
@@ -13952,6 +13953,12 @@ div:where(.swal2-icon).swal2-question {
 
 div:where(.swal2-container) div:where(.swal2-popup) {
   border-radius: 18px !important;
+}
+.swal2-close {
+  box-shadow: none !important;
+}
+body.swal2-shown:not(.swal2-no-backdrop,.swal2-toast-shown) {
+  box-shadow: none !important;
 }
 /* ///////////////////////////// JDGM ////////////////////////////// */
 

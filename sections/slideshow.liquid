@@ -2,23 +2,29 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    Swal.fire({
-      title: '{{ section.settings.popup_title }}',
-      icon: 'none',
-      html: `
-      <div style="width: 50%; height: 0; padding-bottom: 50%; position: relative; margin: 0 auto; max-width: 300px;">
-        <iframe src="{{ section.settings.popup_gif }}" width="100%" height="100%" style="border-radius: 18px; position: absolute; pointer-events: none;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-      </div>
-      <p class="!text-tize1 text-[15px] pt-4">{{ section.settings.popup_text }}</p>
-      `,
-      showCloseButton: true,
-      showCancelButton: false,
-      focusConfirm: false,
-      confirmButtonText: `<a href="{{ section.settings.popup_button_link }}" class="!text-tize1 font-bold">{{ section.settings.popup_button_text }}</a>`,
-      confirmButtonAriaLabel: '',
-      cancelButtonText: ``,
-      cancelButtonAriaLabel: '',
-    });
+    // Check if popup has already been shown
+    if (!localStorage.getItem('popupShown')) {
+      Swal.fire({
+        title: '{{ section.settings.popup_title }}',
+        icon: 'none',
+        html: `
+        <div style="width: 50%; height: 0; padding-bottom: 50%; position: relative; margin: 0 auto; max-width: 300px;">
+          <iframe src="{{ section.settings.popup_gif }}" width="100%" height="100%" style="border-radius: 18px; position: absolute; pointer-events: none;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+        <p class="!text-tize1 text-[15px] pt-4">{{ section.settings.popup_text }}</p>
+        `,
+        showCloseButton: true,
+        showCancelButton: false,
+        focusConfirm: false,
+        confirmButtonText: `<a href="{{ section.settings.popup_button_link }}" class="!text-tize1 font-bold">{{ section.settings.popup_button_text }}</a>`,
+        confirmButtonAriaLabel: '',
+        cancelButtonText: ``,
+        cancelButtonAriaLabel: '',
+      });
+
+      // Set flag in localStorage
+      localStorage.setItem('popupShown', 'true');
+    }
   });
 </script>
 
